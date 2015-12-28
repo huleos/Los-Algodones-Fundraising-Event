@@ -1,0 +1,36 @@
+////////////////////////////////////
+// Mixins
+////////////////////////////////////
+
+// Clearfix
+
+@mixin clearfix {
+  &::before,
+  &::after {
+    content: ' ';
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+// Transitions
+@mixin transition($transition...) {
+  -webkit-transition: $transition;
+          transition: $transition;
+}
+
+// Gutter
+@mixin gutter{
+	padding-left: $grid-gutter;
+	padding-right: $grid-gutter;
+}
+
+// Section Background
+@mixin section_bg($url,$size,$repeat){
+  background-image: $url;
+  background-size: $size;
+  background-repeat: $repeat;
+}

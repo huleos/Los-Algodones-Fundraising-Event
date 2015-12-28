@@ -1,0 +1,48 @@
+////////////////////////////////////
+// Top Bar
+////////////////////////////////////
+
+
+.top-bar{
+	background-color: $top-bar-bg; 
+	position: $top-bar-position;
+	top: 0; 
+	width: 100%;
+	z-index: 99;
+	left: 0;
+	ul{
+		&.menu{
+			background: transparent;
+			li{
+				a{
+					font-size: $top-bar-font-size; 
+					color: $top-bar-color;
+					padding-left: remCalc(8); 
+					padding-right: remCalc(8); 
+					&.active{
+						color: $top-bar-color-active;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Breakpoint Medium
+@media #{$breakpoint-sm} {
+
+	.top-bar{
+		ul{
+			&.menu{
+				li{
+					a{
+						font-size: remCalc(16); 
+						padding-left: remCalc(16);
+						padding-right: remCalc(16);
+					}
+				}
+			}
+		}
+	}
+	
+}

@@ -1,0 +1,54 @@
+////////////////////////////////////
+// Content
+////////////////////////////////////
+
+section{
+	padding-top: remCalc(70);
+	padding-bottom: remCalc(70);
+}
+
+#home{
+	@include section_bg(url('../img/home-bg.jpg'), inherit, repeat);
+	padding-top: remCalc(35);
+	padding-bottom: 0;
+}
+
+#cause{
+	@include section_bg(url('../img/cause-bg.jpg'), cover, no-repeat);
+}
+
+#artists{
+	@include section_bg(url('../img/artist-bg.jpg'), cover, no-repeat);
+}
+
+#services{
+	@include section_bg(url('../img/serv-bg.jpg'), cover, no-repeat);
+	.service-box{
+		img{
+			margin-top: remCalc(15);
+			margin-bottom: remCalc(15);
+		}
+	}
+}
+
+#contact{
+	@include section_bg(url('../img/blue-bg.jpg'), cover, no-repeat);
+}
+
+.main-logo{
+	margin-bottom: remCalc(40);
+}
+
+
+
+// Breakpoint Medium
+@media #{$breakpoint-sm} {
+	
+	#home{
+		padding-bottom: 0; 
+		.fund-logo{
+			margin-top: remCalc(160);
+		}
+	}
+
+}

@@ -1,0 +1,15 @@
+////////////////////////////////////
+// Title
+////////////////////////////////////
+
+h1,h2,h3,h4,h5,h6{
+	font-family: $title-font-family;
+}
+
+.title{
+	text-transform: uppercase;
+	margin-bottom: remCalc(16); 
+	span{
+		border-bottom: remCalc(3) solid $title-border-orange;
+	}
+}

@@ -1,0 +1,71 @@
+////////////////////////////////////
+// Artists
+////////////////////////////////////
+
+.artist-box{
+	position: relative;
+	margin-top: remCalc(15);
+	margin-bottom: remCalc(15);
+	h3{
+    margin-bottom: 0;
+    font-size: 22px;
+  }
+	p{
+		font-size: remCalc(13); 
+	}
+
+	&:hover{
+		.artist-title{
+			opacity: 0;
+		}
+		.artist-info{
+			opacity: 1; 
+		}
+	}
+
+}
+
+
+.artist-title{
+	width: 100%;
+	padding: 20px;
+	position: absolute;
+	bottom: 20px;
+	@include transition(all .4s ease-in-out);
+    
+    p{
+    	margin-bottom: 0; 
+    }
+}
+
+.artist-info{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding: remCalc(20);
+	opacity: 0;
+	@include transition(all .4s ease-in-out);
+}
+
+
+.red-bg{
+	background-color: rgba($brand-red, 0.8); 
+}
+
+.blue-bg{
+	background-color: rgba($brand-blue, 0.8); 
+}
+
+.purple-bg{
+	background-color: rgba($brand-purple, 0.8); 
+}
+
+.green-bg{
+	background-color: rgba($brand-green, 0.8); 
+}
+
+.orange-bg{
+	background-color: rgba($brand-orange, 0.8); 
+}

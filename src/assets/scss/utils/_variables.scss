@@ -1,0 +1,65 @@
+////////////////////////////////////
+// Variables
+////////////////////////////////////
+
+
+// Colors
+//////////////////////////////////
+
+// Brand
+$brand-red:              #bf1e2e !default;
+$brand-purple:           #49164c !default;
+$brand-green:            #0e5d38 !default;
+$brand-orange:           #f7941e !default;
+$brand-blue:             #0e76bc !default;
+
+// Body
+//
+// Settings for the `<body>` element.
+$bg-color:            #fff!default;
+$text-color:          #fff !default;
+$copyright-color:     $brand-blue !default;
+
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$font-sans-serif:        'Lato', Helvetica, Arial, sans-serif !default;
+$font-weight:            400 !default;
+$base-font-size:         remCalc(16) !default;
+
+$title-font-family:      $font-sans-serif;
+$title-border-orange:     $brand-orange !default;
+
+// Links
+$link-color:            $brand-orange !default;
+$link-hover-color:      lighten($link-color, 5%) !default;
+
+
+// TopBar
+$top-bar-bg:                  #fff !default;
+$top-bar-position:            fixed !default;
+$top-bar-font-size:           remCalc(14);
+$top-bar-color:               #999 !default;
+$top-bar-color-active:        #ffa200 !default;
+
+
+// Footer
+// $footer-color:           $brand-aqua !default;
+// $copyright-color:        #fff !default;
+
+// grid variables
+$grid-gutter:            remCalc(15);
+
+// Grid breakpoints
+//
+// Define the minimum and maximum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$breakpoint-sm: "(min-width: 34em)";
+$breakpoint-md: "(min-width: 48em)";
+$breakpoint-lg: "(min-width: 62em)";
+$breakpoint-xl: "(min-width: 75em)";
+
