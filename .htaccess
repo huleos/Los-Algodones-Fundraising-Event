@@ -1,7 +1,7 @@
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^algodonesfundraising.com$ [NC,OR]
 RewriteCond %{HTTP_HOST} ^www.algodonesfundraising.com$
-RewriteRule ^(.*)$ http://algodonesfundraising.com/$1 [L,R=301,NC]
+RewriteRule ^(.*)$ "http\:\/\/algodonesfundraising\.com\/" [R=301,L]
 
 RewriteCond %{REQUEST_URI} !dist/
 RewriteRule (.*) /dist/$1 [L]
