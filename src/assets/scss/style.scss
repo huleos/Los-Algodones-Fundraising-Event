@@ -3,8 +3,7 @@
 ////////////////////////////////////
 
 @import 'foundation';
-@include foundation-everything;
-@include foundation-flex-grid;
+@include foundation-everything($flex: true);
 
 // Import Google Fonts
 @import 'https://fonts.googleapis.com/css?family=Lato:400,100,300,700';
