@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Los Algodones Fundraising Event</title>
-		<meta name="description" content="Here Description">
+    <title>Los Algodones Fundraising Event 2016 | Los Algodones Foundation</title>
+		<meta name="description" content="Los Algodones Fundraising Event 2016 is the first event of Los Algodones Foundation in support of Take My Hand Daycare. Join us on 22/01/2016">
 		<link href="assets/img/favicon.png" type="image/png" rel="icon">
     <link href="assets/css/style.css" rel="stylesheet">
   </head>
@@ -25,7 +25,7 @@
       </nav>
     </header>
 
-		<section id="home" data-magellan-target="home">
+		<div id="home" data-magellan-target="home">
 			<div class="row align-middle">
 				<div class="small-6 medium-8 columns">
 		      <img src="assets/img/pinweel.png" alt="">
@@ -34,7 +34,7 @@
 		      <img src="assets/img/logo.png" alt="">
 		    </div>
 			</div>
-		</section>
+		</div>
 		
 		
 		<section id="cause" data-magellan-target="cause">
@@ -481,20 +481,66 @@
 		</section>
 		
 		<section id="contact" data-magellan-target="contact">
-			<div class="row">
+			<div class="row align-justify">
 				<div class="small-12 columns">
 					<img src="assets/img/fundrainsing-logo.png" class="main-logo" alt="">
 				</div>
 				<div class="small-12 columns">
 					<h2 class="title"><span>Contact</span></h2>
 				</div>
-				<div class="small-12 medium-7 columns">
+				<div class="small-12 medium-5 columns">
 					<p>Nobody has ever lost anything by giving. Our mission of bringing better times to Los Algodones requires a lot of hard work, but together we can achieve it. The possibility of making a change in this town’s life is on your hands, you just need to make the decision. We look forward to see you at our event and hope that you have a great time. If you want to know more about our cause and how you can help, contact us. We'll be glad to share our vision of a better Los Algodones with you.</p>
-					<dl>
-						<dt>Project Coordinator</dt>
-						<dt>Miriam Nájera Ruiz</dt>
-						<dd><a href="mailto:projectcoordinator@sanidentalgroup.com">projectcoordinator[at]sanidentalgroup.com</a></dd>
-					</dl>
+					<p>
+						<b>Project Coordinator</b> <br>
+						Miriam Nájera Ruiz
+					</p>
+					<hr>
+					<!-- Contact Form -->
+					<form action="/contact_form.php" data-abide novalidate>
+						<div data-abide-error class="alert callout" style="display: none;">
+							<p><i class="fi-alert"></i> There are some errors in your form.</p>
+						</div>
+		
+						<div class="row">
+		
+							<div class="small-12 columns">
+								<label>Your name <span class="required">*</span>
+									<input type="text" name="elName" placeholder="John Doe" required>
+									<span class="form-error">This field is required.</span>
+								</label>
+							</div>
+		
+							<div class="small-12 medium-6 columns">
+								<label>Email Address<span class="required">*</span>
+									<input type="email" name="elEmail" placeholder="myemail@example.com" required pattern="email">
+									<span class="form-error">This field is required.</span>
+								</label>
+							</div>
+		
+							<div class="small-12 medium-6 columns">
+								<label>Phone number
+									<input type="tel" name="elPhone" placeholder="928 000 0000">
+								</label>
+							</div>
+		
+							<div class="small-12 columns">
+							<label>Message <span class="required">*</span>
+								<textarea name="elMessage" id="" cols="30" rows="4" placeholder="Your message" required></textarea>
+								<span class="form-error">This field is required.</span>
+							</label>
+							</div>
+		
+						</div>
+		
+						<div class="row">
+							<fieldset class="large-6 columns">
+								<button class="button large expanded" type="submit" value="Submit">Submit</button>
+							</fieldset>
+						</div>
+						<input type="hidden" name="elAddress">
+					</form>
+					<!-- /Contact Form -->
+		
 				</div>
 				<div class="small-12 medium-5 columns">
 					<div class="row">

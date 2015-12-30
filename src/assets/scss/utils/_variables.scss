@@ -20,7 +20,7 @@ $bg-color:            #fff!default;
 $text-color:          #fff !default;
 $copyright-color:     $brand-blue !default;
 
-
+$border-radius:       3px !default;
 
 // Typography
 //
@@ -52,6 +52,15 @@ $top-bar-color-active:        #ffa200 !default;
 
 // grid variables
 $grid-gutter:            remCalc(15);
+
+// Forms
+
+$form-label-color-force:      #fff !default;
+$form-input-color:            #fff !default;
+$form-input-bg:               rgba(#000, .15);
+$form-input-bg-focus:         rgba(#000, .3);
+$placeholder-color:           rgba(#fff, .5) !default;
+$required-color:              #ec5840 !default;
 
 // Grid breakpoints
 //
