@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 
-$myemail = '';//<-----Put Your email address here.
+$myemail = 'creativo@686studio.com';//<-----Put Your email address here.
 $bccmail = '$email_address';//<-----Put Your BCC email address here.
 
 $name = $_POST['elName']; 
@@ -28,6 +28,6 @@ if($name && $email_address && $message)
 	if(!$fieldHidden)
 	mail($to,$email_subject,$email_body,$headers);
 	//redirect to the 'thank you' page
-	header('Location: /');
+	header('Location: index.html');
 } 
 ?>
