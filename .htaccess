@@ -1,7 +1,7 @@
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^algodonesfundraising.com$ [NC,OR]
-RewriteCond %{HTTP_HOST} ^www.algodonesfundraising.com$
-RewriteRule ^index\.html$ "http\:\/\/algodonesfundraising\.com\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^algodonesfoundation.com/$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.algodonesfoundation.com$
+RewriteRule ^index\.html$ "http\:\/\/algodonesfoundation\.com\/" [R=301,L]
 
 RewriteCond %{REQUEST_URI} !dist/
 RewriteRule (.*) /dist/$1 [L]
