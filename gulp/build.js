@@ -10,13 +10,13 @@ gulp.task('clean', function(done) {
 });
 
 // copy contact form
-gulp.task('copy-form', function(){
-	gulp.src('./src/*.php')
+gulp.task('cp-dependencies', function(){
+	gulp.src('./src/*.*')
 	.pipe(gulp.dest('./dist'));
 });
 
 gulp.task('build', function(done) {
-  sequence('clean', ['pages', 'styles', 'scripts', 'images'], 'copy-form', done);
+  sequence('clean', ['pages', 'styles', 'scripts', 'images'], 'cp-dependencies', done);
 });
 
 gulp.task('default', ['build', 'server'], function() {
