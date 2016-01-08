@@ -2,11 +2,13 @@
  Build Task
 ***********************************************/
 var gulp      = require('gulp'),
-    del       = require('rimraf'),
+    del       = require('del'),
     sequence  = require('run-sequence');
 
 gulp.task('clean', function(done) {
-  del('./dist', done);
+  return del([
+  	'dist/**/*'
+  	], done);
 });
 
 // copy contact form
