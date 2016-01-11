@@ -13,6 +13,6 @@ gulp.task('images', function() {
 	  .pipe(gulp.dest('./dist/assets/img'));
 });
 
-gulp.task('clear-img', function (done) {
+gulp.task('images:clear', function (done) {
   return cache.clearAll(done);
 });
