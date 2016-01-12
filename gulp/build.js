@@ -18,7 +18,7 @@ gulp.task('cp-dependencies', function(){
 });
 
 gulp.task('build', function(done) {
-  sequence('clean', ['pages', 'styles', 'scripts', 'images'], 'cp-dependencies', done);
+  sequence('clean', ['pages', 'styles', 'scripts', 'images'], 'cp-dependencies', 'sitemap', done);
 });
 
 gulp.task('default', ['build', 'server'], function() {
