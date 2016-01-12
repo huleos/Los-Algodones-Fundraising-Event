@@ -2,17 +2,23 @@
  Build Task
 ***********************************************/
 var gulp      = require('gulp'),
-		cache     = require('gulp-cache'),
-    del       = require('rimraf'),
+    del       = require('del'),
     sequence  = require('run-sequence');
 
 gulp.task('clean', function(done) {
-	return cache.clearAll(done)
-  del('./dist', done);
+  return del([
+  	'dist/**/*'
+  	], done);
+});
+
+// copy contact form
+gulp.task('cp-dependencies', function(){
+	gulp.src('./src/*.*')
+	.pipe(gulp.dest('./dist'));
 });
 
 gulp.task('build', function(done) {
-  sequence('clean', ['pages', 'styles', 'scripts', 'images'], done);
+  sequence('clean', ['pages', 'styles', 'scripts', 'images'], 'cp-dependencies', done);
 });
 
 gulp.task('default', ['build', 'server'], function() {

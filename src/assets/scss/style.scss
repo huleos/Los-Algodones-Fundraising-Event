@@ -1,6 +1,7 @@
 ////////////////////////////////////
 // Los Algodones Fundraising Event Style 1.0.0
 ////////////////////////////////////
+@charset 'utf-8';
 
 @import 'foundation';
 @include foundation-everything($flex: true);
@@ -15,8 +16,8 @@
 
 // Components CSS
 @import 'components/artists';
-// @import 'components/buttons';
-// @import 'components/forms';
+@import 'components/buttons';
+@import 'components/forms';
 // @import 'components/grid';
 @import 'components/images';
 // @import 'components/lists';

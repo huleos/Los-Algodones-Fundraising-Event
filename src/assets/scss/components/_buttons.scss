@@ -1,0 +1,15 @@
+////////////////////////////////////
+// Buttons
+////////////////////////////////////
+
+.button{
+	background-color: #fff;
+	color: $brand-blue; 
+	border-radius: $border-radius; 
+	border: 2px solid #fff;
+	&:hover,
+	&:focus{
+		background-color: transparent;
+		color: #fff; 
+	}
+}

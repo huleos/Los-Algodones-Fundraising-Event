@@ -12,3 +12,7 @@ gulp.task('images', function() {
 	  .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
 	  .pipe(gulp.dest('./dist/assets/img'));
 });
+
+gulp.task('images:clear', function (done) {
+  return cache.clearAll(done);
+});
