@@ -12,6 +12,7 @@ gulp.task('server', function() {
     	], {
         server: {
         	baseDir: './dist'
+            // baseDir: ['./src', './dist']
         }
     });
 });
