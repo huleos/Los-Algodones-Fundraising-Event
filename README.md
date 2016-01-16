@@ -16,7 +16,7 @@ git clone git@github.com:huleos/gulp-site-generator.git
 
 Install:
 ```
-npm i
+npm install
 ```
 
 Run:

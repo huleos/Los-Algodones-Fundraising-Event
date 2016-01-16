@@ -29,10 +29,16 @@ section{
 			margin-bottom: remCalc(15);
 		}
 	}
+	.thumb-services{
+		margin: remCalc(16) auto;
+	}
 }
 
 #contact{
 	@include section_bg(url('../img/blue-bg.jpg'), cover, no-repeat);
+	form{
+		margin-bottom: remCalc(16);
+	}
 }
 
 .main-logo{
