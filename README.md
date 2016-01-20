@@ -1,4 +1,4 @@
-# Gulp and Bootstrap build project for sites
+# Gulp and Foundation build project for sites
 
 ## Prerequisites
 
