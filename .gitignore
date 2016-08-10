@@ -3,3 +3,5 @@ node_modules
 npm-debug.log
 .ftpquota
 dist/error_log
+fabfile.py
+*.pyc
